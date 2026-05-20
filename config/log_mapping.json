@@ -1,0 +1,29 @@
+{
+  "format": "space-delimited",
+  "fields": [
+    {
+      "name": "timestamp",
+      "pattern": "\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}"
+    },
+    {
+      "name": "level",
+      "pattern": "WARN|INFO|ERROR|DEBUG"
+    },
+    {
+      "name": "component",
+      "pattern": "\\[[^\\]]+\\]",
+      "strip": "[]"
+    },
+    {
+      "name": "message",
+      "pattern": ".+"
+    }
+  ],
+  "log_levels": ["DEBUG", "INFO", "WARN", "ERROR"],
+  "error_level": "ERROR",
+  "multiline": {
+    "enabled": false,
+    "continuation": "^\\s+"
+  },
+  "kv_extraction": true
+}
