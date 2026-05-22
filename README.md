@@ -1,7 +1,7 @@
-# Universal Log Intelligence Engine
+# log-analytics-monitoring-system
 
 ## What is this?
-A Format-Agnostic Log Analytics Engine that parses any timestamped log file
+A Format-Agnostic log-analytics-monitoring-system that parses any timestamped log file
 and generates a System Health Intelligence Report via the command line.
 
 ## Folder Structure
